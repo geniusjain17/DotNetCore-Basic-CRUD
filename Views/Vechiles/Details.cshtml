@@ -1,0 +1,48 @@
+@model ParkingSys.Models.Vechile
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vechile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DriverName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DriverName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EntryDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EntryDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.InTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.InTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OutTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OutTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VechileType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VechileType)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
